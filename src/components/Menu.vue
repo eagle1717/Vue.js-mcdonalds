@@ -1,5 +1,5 @@
 <template>
-  <main class="grid gap-4 p-4 m-auto md:grid-cols-2">
+  <main class="grid gap-4 gap-y-6 p-4 m-auto md:grid-cols-2">
     <BaseCard
       v-for="itmMenu in menuItems"
       :key="itmMenu.id"
@@ -19,16 +19,19 @@ export default class Menu extends Vue {
       {
         id: 1,
         itemImage: require("@/assets/menu/burger.png"),
+        isVisible: false,
         itemPrice: 5,
       },
       {
         id: 2,
         itemImage: require("@/assets/menu/potato.png"),
+        isVisible: false,
         itemPrice: 3,
       },
       {
         id: 3,
         itemImage: require("@/assets/menu/cola.png"),
+        isVisible: false,
         itemPrice: 2,
       },
     ];

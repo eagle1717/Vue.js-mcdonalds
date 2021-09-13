@@ -15,8 +15,18 @@
     <img
       :src="menuItem.itemImage"
       alt=""
-      class="w-40 h-40 object-cover m-auto mt-2"
+      v-show="menuItem.isVisible"
+      class="img object-cover m-auto mt-2"
+      @load="menuItem.isVisible = true"
     />
+    <div
+      class="img m-auto mt-2 bg-yellow-300 relative rounded"
+      v-if="!menuItem.isVisible"
+    >
+      <span class="absolute m-auto left-0 right-0 top-0 bottom-0 w-max text-sm"
+        >Loading...</span
+      >
+    </div>
     <h6 class="text-sm mt-2 text-center">
       <span class="font-medium">{{ $t("price") }}:</span> {{ itemPrice }} $
     </h6>
@@ -46,3 +56,13 @@ export default class BaseCard extends Vue {
   }
 }
 </script>
+<style lang="scss">
+.w-max {
+  height: max-content;
+}
+.img {
+  width: 100%;
+  height: 280px;
+  max-width: 280px;
+}
+</style>
