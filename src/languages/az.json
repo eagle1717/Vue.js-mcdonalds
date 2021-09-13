@@ -1,0 +1,18 @@
+{
+  "header": "McDonald's -a xoş gəldiniz!",
+  "price": "Qiymət",
+  "menu": [
+    {
+      "title": "Hamburger",
+      "description": "Yediyiniz ən yaxşı hamburger."
+    },
+    {
+      "title": "Kartof qızartması",
+      "description": "Dünyanın ən xırtıldayan kartofu."
+    },
+    {
+      "title": "Coca-Cola",
+      "description": "Dünyanın ən dadlı içkisi."
+    }
+  ]
+}

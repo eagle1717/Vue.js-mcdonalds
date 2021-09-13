@@ -1,0 +1,18 @@
+{
+  "header": "Welcome to McDonald's!",
+  "price": "Price",
+  "menu": [
+    {
+      "title": "Hamburger",
+      "description": "The best hamburger you've ever eaten."
+    },
+    {
+      "title": "French fries",
+      "description": "The crispiest potatoes in the world."
+    },
+    {
+      "title": "Coca-Cola",
+      "description": "The most delicious drink in the world."
+    }
+  ]
+}
